@@ -68,6 +68,14 @@ if [ "$ENV_COLOR" ]; then
   LABEL_COLOR=$ENV_COLOR
 fi
 
-export PS1="\n\[$LABEL_COLOR\][$LABEL] \n"
-export PS1="$PS1\[$RED\]\u\[$RESET\] \[$PURPLE\]in \[$TEAL\]\w\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\[$GREEN\]⇢  \[$WHITE\]"
+PENV="\[$LABEL_COLOR\][$LABEL] "
+PNAME="\[$RED\]\u\[$RESET\]"
+PDIR="\[$PURPLE\]in \[$TEAL\]\w\[$RESET\]"
+PREPO="\[$PURPLE\]\$(parse_git_branch)"
+PROMPT="\[$GREEN\]➝  \[$WHITE\]"
+
+export PS1="\n$PENV\n$PNAME $PDIR $PREPO\n$PROMPT"
+
+# export PS1="\n\[$LABEL_COLOR\][$LABEL] \n"
+# export PS1="$PS1\[$RED\]\u\[$RESET\] \[$PURPLE\]in \[$TEAL\]\w\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\[$GREEN\]➝  \[$WHITE\]"
 
