@@ -1,0 +1,10 @@
+*~
+.DS_Store
+sftp-config.json
+*.sublime-workspace
+*.sublime-project
+sftp-settings.json
+database.yml
+wp-config.php
+*.ignore
+.powder

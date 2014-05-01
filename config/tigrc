@@ -1,0 +1,7 @@
+set show-id = yes
+set show-author = yes
+set show-date = yes
+set show-refs = yes
+bind generic P !@sh -c 'echo %(commit) | tr -d "\r\n" | pbcopy'
+bind generic i !git rebase -i %(commit)~1
+bind main f !?git commit --fixup %(commit)
