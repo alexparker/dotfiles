@@ -4,8 +4,9 @@ set tabstop=2
 set expandtab
 colorscheme axp_dark
 set nospell
-set fdm=indent
-set fdc=2
+set foldmethod=indent
+set foldcolumn=2
+set foldlevel=99
 nmap <C-Enter> O<Esc>
 nmap <CR> o<Esc>
 map <C-J> <C-W>j
