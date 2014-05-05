@@ -1,1 +1,2 @@
 Bundle 'rking/ag.vim'
+Bundle 'alexparker/vim-axp-colors'
