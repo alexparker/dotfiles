@@ -1,4 +1,5 @@
 let g:spf13_no_easyWindows = 1
+let g:spf13_no_autochdir = 1
 let g:indent_guides_auto_colors = 0
 set foldmethod=indent
 set foldcolumn=2
