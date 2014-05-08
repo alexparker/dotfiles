@@ -1,4 +1,4 @@
-alias gs="git status"
+alias gs="git status -sb"
 alias ga="git fuzzy add"
 alias ge="git fuzzy edit"
 alias gf="git fetch"
