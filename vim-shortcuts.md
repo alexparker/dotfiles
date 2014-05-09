@@ -21,6 +21,20 @@ __z,b__ - move screen to have cursor at bottom
 `v` - open file in vertical split
 
 
+# Tabs / Windows / Buffers
+
+Buffers are an instance of an editor tied to a path or point in memory.
+
+Tabs and Windows are organizational ways to view buffers. All buffers are within your instance of vim.
+Editing the same buffer in two windows (split panel) will show changes in both because it is the same buffer.
+Editing the same buffer in two tabs, will show changes in both, because it is the same buffer
+
+## Tabs
+
+## Splits (Windows)
+
+`^+W,q` - close current split view`
+
 ## Buffers
 
 `:buf #` - Go to # Buffer
@@ -31,6 +45,4 @@ __z,b__ - move screen to have cursor at bottom
 
 `:vert sb N` - View buffer #N in a vertical split
 
-## Splits
 
-`^+W,q` - close current split view`
