@@ -8,7 +8,9 @@ alias co="git checkout"
 alias gc="git commit"
 alias gp="git pull"
 
-alias checkout="git branch --all | selecta | xargs git checkout"
+# Git checkout fuzzy matching
+alias gco='git branch --all | sed -e "/remotes\/origin\/HEAD/d" -e "s/remotes\/origin\/\(.*\)/\1 `echo -e \"\\033[0;36m\"`\#origin`echo -e \"\\033[m\"`/" | selecta | xargs git checkout'
+
 alias pr="hub pull-request"
 
 alias gitchmodx="git diff --summary | grep --color 'mode change 100755 => 100644' | cut -d' ' -f7- | xargs chmod +x"
