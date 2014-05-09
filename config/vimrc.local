@@ -8,6 +8,7 @@ set foldmethod=indent
 set foldcolumn=2
 set foldlevel=99
 
+nnoremap T :!tig<CR>
 nnoremap Q :q<CR>
 nmap <C-Enter> O<Esc>
 nmap <CR> o<Esc>
