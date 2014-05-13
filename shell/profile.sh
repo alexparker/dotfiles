@@ -46,6 +46,7 @@ export ORANGE
 export GREEN
 export PURPLE
 export WHITE
+export TEAL
 export BOLD
 export RESET
 
