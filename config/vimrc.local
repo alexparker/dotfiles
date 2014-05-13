@@ -19,6 +19,9 @@ map <C-H> <C-W>h
 map <C--> <C-W>_
 map <C-=> <C-W>=
 
+" Close a buffer without closing the window(split pane)
+nnoremap gB <C-W>q
+nnoremap gb :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " Insert mode movements
 inoremap II <Esc>I
