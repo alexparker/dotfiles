@@ -21,8 +21,8 @@ map <C-H> <C-W>h
   nnoremap gB <C-W>q
   nnoremap gb :bp<bar>sp<bar>bn<bar>bd<CR>
   nnoremap <leader>s :w<CR>
-  nnoremap bn :bn<CR>
-  nnoremap bp :bp<CR>
+  nnoremap gnb :bn<CR>
+  nnoremap gpb :bp<CR>
 
 " Fixes clipboard issues for tmux on OSX
 set clipboard=
