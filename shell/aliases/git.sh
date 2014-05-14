@@ -9,7 +9,7 @@ alias gc="git commit"
 alias gp="git pull"
 
 # Git checkout fuzzy matching
-alias gco='git branch --all | sed -e "/remotes\/origin\/HEAD/d" -e "s/remotes\/origin\/\(.*\)/\1 `echo -e \"\\033[0;36m\"`\#origin`echo -e \"\\033[m\"`/" | selecta | xargs git checkout'
+alias gco='git branch --all | sed -e "/remotes\/origin\/HEAD/d" -e "s/remotes\/origin\/\(.*\)/\1 `echo -e \"\\033[0;36m\"`\#origin`echo -e \"\\033[m\"`/" | selecta | xargs -n 1 git checkout'
 
 alias pr="hub pull-request"
 
