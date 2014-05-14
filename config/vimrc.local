@@ -51,3 +51,5 @@ set clipboard=
 
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Source Vimrca
+  nmap <leader><leader>so :so $MYVIMRC
