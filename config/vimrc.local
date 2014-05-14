@@ -16,18 +16,36 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
-map <C--> <C-W>_
-map <C-=> <C-W>=
 
 " Close a buffer without closing the window(split pane)
-nnoremap gB <C-W>q
-nnoremap gb :bp<bar>sp<bar>bn<bar>bd<CR>
+  nnoremap gB <C-W>q
+  nnoremap gb :bp<bar>sp<bar>bn<bar>bd<CR>
+
+" Fixes clipboard issues for tmux on OSX
+set clipboard=
+
+" Copy-Paste using <leader>
+  " Copy current line
+  nnoremap <leader>c "vyy
+  " Cut current line
+  nnoremap <leader>x "vdd
+  " Copy highlighted characters
+  vnoremap <leader>c "vy
+  " Cut highlighted characters
+  vnoremap <leader>x "vd
+  " Paste v-register after cursor
+  nnoremap <leader>v "vp
+  " Paste v-register before cursor
+  nnoremap <leader>V "vP
+
+"Duplicate current line below
+  nnoremap <leader>dd "dyy"dp
 
 " Insert mode movements
-inoremap II <Esc>I
-inoremap AA <Esc>A
-inoremap KK <Esc>O
-inoremap HH <Esc>
-inoremap JJ <Esc>o
+  inoremap II <Esc>I
+  inoremap AA <Esc>A
+  inoremap KK <Esc>O
+  inoremap HH <Esc>
+  inoremap JJ <Esc>o
 
 autocmd BufWritePre * :%s/\s\+$//e
