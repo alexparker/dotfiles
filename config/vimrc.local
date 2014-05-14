@@ -25,7 +25,7 @@ map <C-H> <C-W>h
   nnoremap gpb :bp<CR>
 
 " Fixes clipboard issues for tmux on OSX
-set clipboard=
+  set clipboard=
 
 " Copy-Paste using <leader>
   " Copy current line
