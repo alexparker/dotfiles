@@ -37,12 +37,11 @@ Editing the same buffer in two tabs, will show changes in both, because it is th
 
 ## Buffers
 
-`:buf #` - Go to # Buffer
+`:b#` - Go to # Buffer
 `:bn` - Go to next buffer
 `:bp` - Go to previous buffer
 `:bd` - Delete current buffer (close file)
 `:bw` - Buffer wipe
 
 `:vert sb N` - View buffer #N in a vertical split
-
 
