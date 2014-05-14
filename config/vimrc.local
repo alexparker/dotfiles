@@ -20,6 +20,7 @@ map <C-H> <C-W>h
 " Close a buffer without closing the window(split pane)
   nnoremap gB <C-W>q
   nnoremap gb :bp<bar>sp<bar>bn<bar>bd<CR>
+  nnoremap <leader>s :w<CR>
 
 " Fixes clipboard issues for tmux on OSX
 set clipboard=
@@ -49,3 +50,4 @@ set clipboard=
   inoremap JJ <Esc>o
 
 autocmd BufWritePre * :%s/\s\+$//e
+
