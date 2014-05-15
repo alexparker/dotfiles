@@ -18,11 +18,11 @@ map <C-L> <C-W>l
 map <C-H> <C-W>h
 
 " Close a buffer without closing the window(split pane)
-  nnoremap gB <C-W>q
-  nnoremap gb :bp<bar>sp<bar>bn<bar>bd<CR>
+  nnoremap gC <C-W>q
+  nnoremap gc :bp<bar>sp<bar>bn<bar>bd<CR>
   nnoremap <leader>s :w<CR>
-  nnoremap gnb :bn<CR>
-  nnoremap gpb :bp<CR>
+  nnoremap gn :bn<CR>
+  nnoremap gp :bp<CR>
 
 " Fixes clipboard issues for tmux on OSX
   set clipboard=
