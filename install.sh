@@ -32,6 +32,12 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 # Install Ruby-build plugin for Rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
+# Install github CLI wrapper for git
+
+git clone https://github.com/github/hub.git /tmp/hub
+cd /tmp/hub
+rake install prefix=/usr/local
+
 
 # TODO:
 # [ ] Setup zsh so it will play nice with mac & linux
