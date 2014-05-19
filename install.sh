@@ -24,6 +24,9 @@ echo "source ~/.fresh/build/shell.sh" >> ~/.bashrc
 sh <(curl https://raw.githubusercontent.com/alexparker/spf13-vim/3.0/bootstrap.sh)
 
 
+# TODO: 
+# [ ] Setup zsh so it will play nice with mac & linux
+# [ ] Setup oh-my-zsh
 
 
 
