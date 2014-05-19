@@ -23,8 +23,17 @@ echo "source ~/.fresh/build/shell.sh" >> ~/.bashrc
 # Install spf13 fork
 sh <(curl https://raw.githubusercontent.com/alexparker/spf13-vim/3.0/bootstrap.sh)
 
+# Install Rbenv
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 
-# TODO: 
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+
+# Install Ruby-build plugin for Rbenv
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+
+# TODO:
 # [ ] Setup zsh so it will play nice with mac & linux
 # [ ] Setup oh-my-zsh
 
