@@ -5,6 +5,8 @@ elif infocmp xterm-256color >/dev/null 2>&1; then
         export TERM=xterm-256color
 fi
 
+[ -n "$TMUX" ] && export TERM=screen-256color
+
 if tput setaf 1 &> /dev/null; then
         tput sgr0
         if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
