@@ -17,10 +17,17 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+" Set current viewport to full height
+nnoremap <leader>_ <C-W>_
+" Set current viewport to full width
+nnoremap <leader>\| <C-W>\|
+" Set current viewport to max view
+nnoremap <leader>M <C-W>_ <C-W>\|
+
 " Close a buffer without closing the window(split pane)
   nnoremap gC <C-W>q
   nnoremap gc :bp<bar>sp<bar>bn<bar>bd<CR>
-  nnoremap <leader>s :w<CR>
+  nnoremap <leader>w :w<CR>
   nnoremap gn :bn<CR>
   nnoremap gp :bp<CR>
 
