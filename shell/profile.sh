@@ -75,7 +75,7 @@ PENV="\[$LABEL_COLOR\][$LABEL] "
 PNAME="\[$RED\]\u\[$RESET\]"
 PDIR="\[$PURPLE\]in \[$TEAL\]\w\[$RESET\]"
 PREPO="\[$PURPLE\]\$(parse_git_branch)"
-PROMPT="\[$GREEN\]➝  \[$WHITE\]"
+PROMPT="\[$GREEN\]➝  \[$RESET\]"
 
 export PS1="\n$PENV\n$PNAME $PDIR $PREPO\n$PROMPT"
 
