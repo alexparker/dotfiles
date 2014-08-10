@@ -2,7 +2,8 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
-colorscheme axp_dark
+colorscheme darkfreckle
+
 set nospell
 set foldmethod=indent
 set foldcolumn=2
@@ -22,7 +23,7 @@ nnoremap <leader>_ <C-W>_
 " Set current viewport to full width
 nnoremap <leader>\| <C-W>\|
 " Set current viewport to max view
-nnoremap <leader>M <C-W>_ <C-W>\|
+nnoremap <leader>m <C-W>_ <C-W>\|
 
 " Close a buffer without closing the window(split pane)
   nnoremap gC <C-W>q
