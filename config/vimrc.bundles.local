@@ -1,2 +1,4 @@
 Bundle 'rking/ag.vim'
 Bundle 'alexparker/vim-axp-colors'
+Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'slim-template/vim-slim'
