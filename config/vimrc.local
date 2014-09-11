@@ -18,6 +18,8 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+command Lcd lcd %:p:h
+
 " Set current viewport to full height
 nnoremap <leader>_ <C-W>_
 " Set current viewport to full width
@@ -29,6 +31,7 @@ nnoremap <leader>m <C-W>_ <C-W>\|
   nnoremap gC <C-W>q
   nnoremap gc :bp<bar>sp<bar>bn<bar>bd<CR>
   nnoremap <leader>w :w<CR>
+  noremap <C-S> :w<CR>
   nnoremap gn :bn<CR>
   nnoremap gp :bp<CR>
 
@@ -68,6 +71,12 @@ augroup CursorLine
     au BufWinEnter * setlocal cursorline
     au WinLeave * setlocal nocursorline
 augroup END
+
+
+if version >= 700
+  au InsertEnter * hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
+  au InsertLeave * hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+endif
 
 " Source Vimrca
   nmap <leader><leader>so :so $MYVIMRC
