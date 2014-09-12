@@ -74,8 +74,8 @@ augroup END
 
 
 if version >= 700
-  au InsertEnter * hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
-  au InsertLeave * hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  au InsertLeave * hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
+  au InsertEnter * hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 endif
 
 " Source Vimrca
