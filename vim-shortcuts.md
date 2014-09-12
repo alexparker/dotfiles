@@ -16,6 +16,10 @@ __z,b__ - move screen to have cursor at bottom
 `^+d` - Scroll screen down with cursor
 `^+u` - Scroll screen up with cursor
 
+`t{char}` - move until(before) next occurance of char
+
+`f{char}` - move forward to next occurance of char
+
 ## Ag Vim plugin
 
 `v` - open file in vertical split
@@ -34,6 +38,7 @@ Editing the same buffer in two tabs, will show changes in both, because it is th
 ## Splits (Windows)
 
 `^+W,q` - close current split view`
+`^+W,r` - rotate two buffers in a split window
 
 ## Buffers
 
