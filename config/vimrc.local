@@ -18,6 +18,9 @@ map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
 
+" Search for visual selection
+vnorem // y/<c-r>"<cr>
+
 command Lcd lcd %:p:h
 
 " Set current viewport to full height
