@@ -5,3 +5,5 @@ let g:spf13_noninvasive_completion = 1
 set foldmethod=indent
 set foldcolumn=2
 set foldlevel=99
+let g:bufferline_rotate = 1
+let g:bufferline_fixed_index = -1
