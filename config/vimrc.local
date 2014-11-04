@@ -6,6 +6,9 @@ set tabstop=2
 set expandtab
 colorscheme darkfreckle
 
+nnoremap <silent> - :vert res -5<cr>
+nnoremap <silent> + :vert res +5<cr>
+
 set nospell
 set foldmethod=indent
 set foldcolumn=2
