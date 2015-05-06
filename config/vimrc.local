@@ -17,6 +17,10 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-L> <C-W>l
 map <C-H> <C-W>h
+inoremap <C-J> <Esc><C-W>j
+inoremap <C-K> <Esc><C-W>k
+inoremap <C-L> <Esc><C-W>l
+inoremap <C-H> <Esc><C-W>h
 imap <C-E> <Esc><C-E>
 
 " Search for visual selection
@@ -42,6 +46,7 @@ nnoremap <leader>_ <C-W>_
 nnoremap <leader>\| <C-W>\|
 " Set current viewport to max view
 nnoremap <leader>m <C-W>_ <C-W>\|
+
 
 " Close a buffer without closing the window(split pane)
   nnoremap gC <C-W>q
