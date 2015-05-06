@@ -1,14 +1,20 @@
+UnBundle 'tpope/vim-commentary'
+
 set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
 colorscheme darkfreckle
 
+nnoremap <silent> - :vert res -5<cr>
+nnoremap <silent> + :vert res +5<cr>
+
 set nospell
 set foldmethod=indent
 set foldcolumn=2
 set foldlevel=99
 
+inoremap <C-P> <Esc>:CtrlP<CR>
 nnoremap <leader><leader>t :!tig<CR>
 nnoremap Q :q<CR>
 nmap <C-Enter> O<Esc>
@@ -95,8 +101,8 @@ augroup END
 
 
 if version >= 700
-  au InsertLeave * hi CursorLine ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=NONE
-  au InsertEnter * hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=NONE gui=NONE
+  au InsertLeave * hi CursorLine ctermfg=NONE ctermbg=237 cterm=none guifg=NONE guibg=NONE gui=NONE
+  au InsertEnter * hi CursorLine ctermfg=NONE ctermbg=233 cterm=NONE guifg=NONE guibg=NONE gui=NONE
 endif
 
 " Source Vimrca
