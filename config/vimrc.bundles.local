@@ -2,3 +2,6 @@ Bundle 'rking/ag.vim'
 Bundle 'alexparker/vim-axp-colors'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'slim-template/vim-slim'
+Bundle 'wavded/vim-stylus'
+Bundle 'heartsentwined/vim-emblem'
+
