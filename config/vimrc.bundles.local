@@ -3,10 +3,12 @@ if !exists("g:bundles")
 endif
 
 UnBundle 'tpope/vim-commentary'
+UnBundle 'bling/vim-bufferline'
 Bundle 'rking/ag.vim'
 Bundle 'alexparker/vim-axp-colors'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'slim-template/vim-slim'
 Bundle 'wavded/vim-stylus'
 Bundle 'heartsentwined/vim-emblem'
+Bundle 'tpope/vim-obsession'
 
