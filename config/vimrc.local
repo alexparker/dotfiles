@@ -13,6 +13,8 @@ set foldcolumn=2
 set foldlevel=99
 
 inoremap <C-P> <Esc>:CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+
 nnoremap <leader><leader>t :!tig<CR>
 nnoremap Q :q<CR>
 nmap <C-Enter> O<Esc>
