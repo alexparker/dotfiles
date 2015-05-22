@@ -36,3 +36,5 @@ let g:airline#extensions#default#section_truncate_width = {
     \ 'z': 88,
     \ 'warning': 91
     \ }
+
+let NERDTreeHijackNetrw=1
