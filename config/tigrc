@@ -3,3 +3,4 @@ bind generic i !git rebase -i %(commit)~1
 bind main f !@?git commit --fixup %(commit)
 bind status D !@?rm %(file)
 bind generic 2 :?^@@
+set main-view = author:no date:relative commit-title:graph=yes,refs=yes
