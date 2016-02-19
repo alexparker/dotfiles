@@ -4,6 +4,7 @@ endif
 
 UnBundle 'tpope/vim-commentary'
 UnBundle 'bling/vim-bufferline'
+UnBundle 'amirh/HTML-AutoCloseTag'
 Bundle 'rking/ag.vim'
 Bundle 'alexparker/vim-axp-colors'
 Bundle 'mustache/vim-mustache-handlebars'
@@ -11,4 +12,6 @@ Bundle 'slim-template/vim-slim'
 Bundle 'wavded/vim-stylus'
 Bundle 'heartsentwined/vim-emblem'
 Bundle 'tpope/vim-obsession'
+Bundle 'jtratner/vim-flavored-markdown'
+Bundle 'henrik/vim-qargs'
 
