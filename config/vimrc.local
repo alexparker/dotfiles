@@ -67,17 +67,17 @@ nnoremap <leader>m <C-W>_ <C-W>\|
 
 " Copy-Paste using <leader>
   " Copy current line
-  nnoremap <leader>c "vyy
+  nnoremap <leader>c "*yy
   " Cut current line
-  nnoremap <leader>x "vdd
+  nnoremap <leader>x "*dd
   " Copy highlighted characters
-  vnoremap <leader>c "vy
+  vnoremap <leader>c "*y
   " Cut highlighted characters
-  vnoremap <leader>x "vd
+  vnoremap <leader>x "*d
   " Paste v-register after cursor
-  nnoremap <leader>v "vp
+  nnoremap <leader>v "*p
   " Paste v-register before cursor
-  nnoremap <leader>V "vP
+  nnoremap <leader>V "*P
 
 "Duplicate current line below
   nnoremap <leader>dd "dyy"dp
