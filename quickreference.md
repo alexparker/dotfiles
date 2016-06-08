@@ -12,8 +12,8 @@ __Install__
 __Running It__
 `posgres -D /usr/local/var/postgres`
 
-`launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist`
 
-__Load at Startup__
+__To Load at Startup__
+`launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist`
 `ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents`
 

@@ -14,4 +14,4 @@ Bundle 'heartsentwined/vim-emblem'
 Bundle 'tpope/vim-obsession'
 Bundle 'jtratner/vim-flavored-markdown'
 Bundle 'henrik/vim-qargs'
-
+Bundle 'elixir-lang/vim-elixir'
