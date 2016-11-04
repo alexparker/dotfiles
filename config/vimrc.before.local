@@ -30,9 +30,9 @@ let g:airline_theme='alex_airline'
 
 
 let g:airline#extensions#default#section_truncate_width = {
-    \ 'b': 91,
+    \ 'b': 130,
     \ 'x': 60,
-    \ 'y': 91,
+    \ 'y': 130,
     \ 'z': 88,
     \ 'warning': 91
     \ }

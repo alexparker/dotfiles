@@ -29,6 +29,8 @@ inoremap <C-L> <Esc><C-W>l
 inoremap <C-H> <Esc><C-W>h
 imap <C-E> <Esc><C-E>
 
+imap jjj <Esc>jjj
+
 " Search for visual selection
 vnorem // y/<c-r>"<cr>
 
@@ -125,3 +127,6 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
       \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 let g:gist_post_private=1
+
+iabbr rpry require 'pry-remote'; binding.remote_pry;
+iabbr brpy require 'pry'; binding.pry;

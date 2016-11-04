@@ -2,5 +2,6 @@ bind generic P !@sh -c 'echo %(commit) | tr -d "\r\n" | pbcopy'
 bind generic i !git rebase -i %(commit)~1
 bind main f !@?git commit --fixup %(commit)
 bind status D !@?rm %(file)
+bind status + !git commit --amend
 bind generic 2 :?^@@
 set main-view = author:no date:relative commit-title:graph=yes,refs=yes

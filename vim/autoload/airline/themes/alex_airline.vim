@@ -21,6 +21,7 @@ let s:gui_insertbg    = '#87AF5F'
 let s:cterm_insertfg  = 15   " Foreground for insert mode and file position blocks
 let s:gui_insertfg    = '#FFFFFF'
 
+
 let s:cterm_visualbg  = 166  " Background for visual mode and file position blocks
 let s:gui_visualbg    = '#ff8c00'
 let s:cterm_visualfg  = 15   " Foreground for visual mode and file position blocks
@@ -36,7 +37,7 @@ let s:gui_alert       = '#870000'
 
 let s:cterm_inactivebg = 231 " Background for inactive mode
 let s:gui_inactivebg   = '#1C1C1C'
-let s:cterm_inactivefg = 044 " Foreground for inactive mode
+let s:cterm_inactivefg = 236 " Foreground for inactive mode
 let s:gui_inactivefg   = '#6E6E6E'
 
 " Branch and file format
@@ -47,21 +48,21 @@ let s:N1 = [s:gui_normalfg, s:gui_normalbg, s:cterm_normalfg, s:cterm_normalbg] 
 " let s:N2 = [s:gui_termfg2, s:gui_termbg2, s:cterm_normalbg, s:cterm_termbg2]     " Middle block
 let s:N2 = [s:gui_normalfg, s:gui_normalbg, s:cterm_normalfg, s:cterm_normalbg] " Outside blocks in normal mode
 let g:airline#themes#alex_airline#palette.normal = airline#themes#generate_color_map(s:N1, s:BB, s:N2)
-let g:airline#themes#alex_airline#palette.normal_modified = {'airline_c': [s:gui_alert, s:gui_termbg2, s:cterm_alert, s:cterm_termbg2, 'bold'] ,}
+let g:airline#themes#alex_airline#palette.normal_modified = {'airline_c': [s:gui_alert, s:gui_normalbg, s:cterm_alert, s:cterm_normalbg, 'bold'] ,}
 
 " Insert mode
 let s:I1 = [s:gui_insertfg, s:gui_insertbg, s:cterm_insertfg, s:cterm_insertbg] " Outside blocks in insert mode
 "original let s:I2 = [s:gui_insertbg, s:gui_termbg2, s:cterm_insertbg, s:cterm_termbg2]   " Middle block
 let s:I2 = [s:gui_insertfg, s:gui_insertbg, s:cterm_insertfg, s:cterm_insertbg] " Outside blocks in insert mode
 let g:airline#themes#alex_airline#palette.insert = airline#themes#generate_color_map(s:I1, s:BB, s:I2)
-let g:airline#themes#alex_airline#palette.insert_modified = {'airline_c': [s:gui_alert, s:gui_termbg2, s:cterm_alert, s:cterm_termbg2, 'bold'] ,}
+let g:airline#themes#alex_airline#palette.insert_modified = {'airline_c': [s:gui_alert, s:gui_insertbg, s:cterm_alert, s:cterm_insertbg, 'bold'] ,}
 
 " Replace mode
 let s:R1 = [s:gui_replacefg, s:gui_replacebg, s:cterm_replacefg, s:cterm_replacebg]  " Outside blocks in replace mode
 " original let s:R2 = [s:gui_termfg, s:gui_termbg2, s:cterm_termfg, s:cterm_termbg2]            " Middle block
 let s:R2 = [s:gui_replacefg, s:gui_replacebg, s:cterm_replacefg, s:cterm_replacebg]  " Outside blocks in replace mode
 let g:airline#themes#alex_airline#palette.replace = airline#themes#generate_color_map(s:R1, s:BB, s:R2)
-let g:airline#themes#alex_airline#palette.replace_modified = {'airline_c': [s:gui_alert, s:gui_termbg2, s:cterm_alert, s:cterm_termbg2, 'bold'] ,}
+let g:airline#themes#alex_airline#palette.replace_modified = {'airline_c': [s:gui_alert, s:gui_replacebg, s:cterm_alert, s:cterm_replacebg, 'bold'] ,}
 
 " Visual mode
 let s:V1 = [s:gui_visualfg, s:gui_visualbg, s:cterm_visualfg, s:cterm_visualbg] " Outside blocks in visual mode
