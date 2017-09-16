@@ -10,3 +10,4 @@ alias refresh="fresh && source ~/.bashrc"
 # WARNING: launchctl will fail when run under tmux.
 
 # alias gomongo="mongod --config /usr/local/etc/mongod.conf"
+alias fixpow="sudo pfctl -f /etc/pf.conf; sudo pfctl -e"
