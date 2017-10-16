@@ -7,10 +7,37 @@ colorscheme darkfreckle
 nnoremap <silent> - :vert res -5<cr>
 nnoremap <silent> + :vert res +5<cr>
 
+let mapleader= ','
+
 set nospell
+set signcolumn=yes
 set foldmethod=indent
-set foldcolumn=2
+set foldcolumn=0
 set foldlevel=99
+
+    " Code folding options
+    nmap <leader>f0 :set foldlevel=0<CR>
+    nmap <leader>f1 :set foldlevel=1<CR>
+    nmap <leader>f2 :set foldlevel=2<CR>
+    nmap <leader>f3 :set foldlevel=3<CR>
+    nmap <leader>f4 :set foldlevel=4<CR>
+    nmap <leader>f5 :set foldlevel=5<CR>
+    nmap <leader>f6 :set foldlevel=6<CR>
+    nmap <leader>f7 :set foldlevel=7<CR>
+    nmap <leader>f8 :set foldlevel=8<CR>
+    nmap <leader>f9 :set foldlevel=9<CR>
+
+    " Visual shifting (does not exit Visual mode)
+    vnoremap < <gv
+    vnoremap > >gv
+
+    " Allow using the repeat operator with a visual selection (!)
+    " http://stackoverflow.com/a/8064607/127816
+    vnoremap . :normal .<CR>
+
+
+    map <Leader>= <C-w>=
+
 
 inoremap <C-P> <Esc>:CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
@@ -33,8 +60,6 @@ imap jjj <Esc>jjj
 
 " Search for visual selection
 vnorem // y/<c-r>"<cr>
-
-command Lcd lcd %:p:h
 
 
 " window

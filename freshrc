@@ -5,3 +5,6 @@ fresh shell/aliases/\*
 fresh shell/config/\*
 
 fresh config/\* --file
+
+fresh plugins/oh-my-zsh/custom --file=~/.oh-my-zsh/custom/
+fresh plugins/vim/autoload/airline/themes/alex_airline.vim --file=~/.vim/autoload/airline/themes/alex_airline.vim
