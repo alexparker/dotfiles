@@ -57,3 +57,6 @@ call VimSource("~/.vimrc.options.general")
 
 " CtrlP
   call VimSource('~/.vimrc.options.ctrlp')
+  "
+" vim-jsx
+  call VimSource('~/.vimrc.options.vim-jsx')

@@ -1,0 +1,2 @@
+" Config options for mxw/vim-jsx Plugin
+let g:jsx_ext_required = 0
