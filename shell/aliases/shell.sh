@@ -11,3 +11,4 @@ alias refresh="fresh && source ~/.bashrc"
 
 # alias gomongo="mongod --config /usr/local/etc/mongod.conf"
 alias fixpow="sudo pfctl -f /etc/pf.conf; sudo pfctl -e"
+alias station='open -a Station'

@@ -9,3 +9,4 @@ alias bspec="bundle exec rspec"
 alias rollback="bundle exec rake db:rollback"
 alias migrate="bundle exec rake db:migrate"
 
+alias nbr="nanobox run"

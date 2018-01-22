@@ -60,3 +60,6 @@ call VimSource("~/.vimrc.options.general")
   "
 " vim-jsx
   call VimSource('~/.vimrc.options.vim-jsx')
+
+" vim-syntastic
+  call VimSource('~/.vimrc.options.syntastic')

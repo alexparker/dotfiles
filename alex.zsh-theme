@@ -1,4 +1,4 @@
-# AVIT ZSH Theme
+# AlexParker Zsh Theme
 local ret_status="%(?:%{$fg_bold[green]%}$ :%{$fg_bold[red]%}$ %s)"
 PROMPT='
 $(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)

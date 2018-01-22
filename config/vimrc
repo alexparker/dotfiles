@@ -9,15 +9,6 @@ set t_Co=256
 
 
 
-" OPTIONS
-" Use vimrc.options if available {
-    if filereadable(expand("~/.vimrc.options"))
-        source ~/.vimrc.options
-    endif
-" }
-
-
-
 " BEFORE
 " Use vimrc.before if available {
     if filereadable(expand("~/.vimrc.before.local"))
@@ -32,4 +23,14 @@ set t_Co=256
         source ~/.vimrc.local
     endif
 " }
+
+" OPTIONS
+" Use vimrc.options if available {
+    if filereadable(expand("~/.vimrc.options"))
+        source ~/.vimrc.options
+    endif
+" }
+
+
+
 
