@@ -35,3 +35,4 @@ let g:airline#extensions#default#section_truncate_width = {
     \ }
 
 let NERDTreeHijackNetrw=1
+set ttymouse=sgr

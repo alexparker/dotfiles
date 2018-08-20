@@ -90,7 +90,7 @@ nnoremap <leader>m <C-W>_ <C-W>\|
   nnoremap gp :bp<CR>
 
 " Fixes clipboard issues for tmux on OSX
-  set clipboard=
+  "set clipboard=
 
 " Copy-Paste using <leader>
   " Copy current line

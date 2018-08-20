@@ -4,4 +4,4 @@ bind main f !@?git commit --fixup %(commit)
 bind status D !@?rm %(file)
 bind status + !git commit --amend
 bind generic 2 :?^@@
-set main-view = author:no date:relative commit-title:graph=yes,refs=yes
+set main-view = author:no id:no date:relative commit-title:graph=yes,refs=yes

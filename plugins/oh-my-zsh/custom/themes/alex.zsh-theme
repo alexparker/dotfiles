@@ -1,12 +1,20 @@
 # AVIT ZSH Theme
-local ret_status="%(?:%{$fg_bold[green]%}$ :%{$fg_bold[red]%}$ %s)"
+local ret_status="%(?:%{$fg_bold[green]%}$ :%{$fg_bold[red]%}$ %s)%{$reset_color%}"
 PROMPT='
-$(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)
+$(_user_host) ${_current_dir} $(_git_branch_info) $(_ruby_version)
 $ret_status '
 
 PROMPT2='%{$fg[grey]%}◀%{$reset_color%} '
 
 RPROMPT='$(_vi_status)%{$(echotc UP 1)%}$(_git_time_since_commit) [%D{%a %L:%M %p}] $(git_prompt_status) ${_return_status}%{$(echotc DO 1)%}'
+RPROMPT=''
+
+function _git_branch_info() {
+  if [[ -n $(git symbolic-ref HEAD 2> /dev/null) ]]; then
+    ref=$(git_prompt_info)
+    echo "\n${ref} $(_git_time_since_commit)"
+  fi
+}
 
 local _current_dir="%{$fg[blue]%}%3~%{$reset_color%} "
 local _return_status="%{$fg[red]%}%(?..⍉)%{$reset_color%}"
