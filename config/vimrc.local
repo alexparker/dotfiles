@@ -2,15 +2,42 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
-colorscheme darkfreckle
+colorscheme mad_unicorn
 
 nnoremap <silent> - :vert res -5<cr>
 nnoremap <silent> + :vert res +5<cr>
 
+let mapleader= ','
+
 set nospell
+set signcolumn=yes
 set foldmethod=indent
-set foldcolumn=2
+set foldcolumn=0
 set foldlevel=99
+
+    " Code folding options
+    nmap <leader>f0 :set foldlevel=0<CR>
+    nmap <leader>f1 :set foldlevel=1<CR>
+    nmap <leader>f2 :set foldlevel=2<CR>
+    nmap <leader>f3 :set foldlevel=3<CR>
+    nmap <leader>f4 :set foldlevel=4<CR>
+    nmap <leader>f5 :set foldlevel=5<CR>
+    nmap <leader>f6 :set foldlevel=6<CR>
+    nmap <leader>f7 :set foldlevel=7<CR>
+    nmap <leader>f8 :set foldlevel=8<CR>
+    nmap <leader>f9 :set foldlevel=9<CR>
+
+    " Visual shifting (does not exit Visual mode)
+    vnoremap < <gv
+    vnoremap > >gv
+
+    " Allow using the repeat operator with a visual selection (!)
+    " http://stackoverflow.com/a/8064607/127816
+    vnoremap . :normal .<CR>
+
+
+    map <Leader>= <C-w>=
+
 
 inoremap <C-P> <Esc>:CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
@@ -29,10 +56,10 @@ inoremap <C-L> <Esc><C-W>l
 inoremap <C-H> <Esc><C-W>h
 imap <C-E> <Esc><C-E>
 
+imap jjj <Esc>jjj
+
 " Search for visual selection
 vnorem // y/<c-r>"<cr>
-
-command Lcd lcd %:p:h
 
 
 " window
@@ -63,21 +90,21 @@ nnoremap <leader>m <C-W>_ <C-W>\|
   nnoremap gp :bp<CR>
 
 " Fixes clipboard issues for tmux on OSX
-  set clipboard=
+  "set clipboard=
 
 " Copy-Paste using <leader>
   " Copy current line
-  nnoremap <leader>c "vyy
+  nnoremap <leader>c "*yy
   " Cut current line
-  nnoremap <leader>x "vdd
+  nnoremap <leader>x "*dd
   " Copy highlighted characters
-  vnoremap <leader>c "vy
+  vnoremap <leader>c "*y
   " Cut highlighted characters
-  vnoremap <leader>x "vd
+  vnoremap <leader>x "*d
   " Paste v-register after cursor
-  nnoremap <leader>v "vp
+  nnoremap <leader>v "*p
   " Paste v-register before cursor
-  nnoremap <leader>V "vP
+  nnoremap <leader>V "*P
 
 "Duplicate current line below
   nnoremap <leader>dd "dyy"dp
@@ -123,3 +150,8 @@ nmap <Space> :call SelectIndent()<CR>
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
       \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
       \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+let g:gist_post_private=1
+
+iabbr rpry require 'pry-remote'; binding.remote_pry;
+iabbr brpy require 'pry'; binding.pry;

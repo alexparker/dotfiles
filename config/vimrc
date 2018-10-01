@@ -1,0 +1,36 @@
+set t_Co=256
+
+" BUNDLES
+" Use vimrc.bundles if available {
+    if filereadable(expand("~/.vimrc.bundles"))
+        source ~/.vimrc.bundles
+    endif
+" }
+
+
+
+" BEFORE
+" Use vimrc.before if available {
+    if filereadable(expand("~/.vimrc.before.local"))
+        source ~/.vimrc.before.local
+    endif
+" }
+
+
+" LOCAL
+" Use local vimrc if available {
+    if filereadable(expand("~/.vimrc.local"))
+        source ~/.vimrc.local
+    endif
+" }
+
+" OPTIONS
+" Use vimrc.options if available {
+    if filereadable(expand("~/.vimrc.options"))
+        source ~/.vimrc.options
+    endif
+" }
+
+
+
+

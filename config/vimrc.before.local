@@ -2,9 +2,6 @@ let g:spf13_no_easyWindows = 1
 let g:spf13_no_autochdir = 1
 let g:indent_guides_auto_colors = 0
 let g:spf13_noninvasive_completion = 1
-set foldmethod=indent
-set foldcolumn=2
-set foldlevel=99
 " let g:bufferline_rotate = 1
 " let g:bufferline_fixed_index = -1
 "let g:airline#extensions#default#layout = []
@@ -23,18 +20,19 @@ let g:airline_mode_map = {
       \ }
 let g:airline_section_b = '%{airline#util#wrap(airline#extensions#branch#get_head(),0)}'
 let g:airline_powerline_fonts=1
-let g:airline_theme='murmur'
+let g:airline_theme='alex_airline'
 
   let g:airline_left_sep=''
   let g:airline_right_sep=''
 
 
 let g:airline#extensions#default#section_truncate_width = {
-    \ 'b': 91,
+    \ 'b': 130,
     \ 'x': 60,
-    \ 'y': 91,
+    \ 'y': 130,
     \ 'z': 88,
     \ 'warning': 91
     \ }
 
 let NERDTreeHijackNetrw=1
+set ttymouse=sgr

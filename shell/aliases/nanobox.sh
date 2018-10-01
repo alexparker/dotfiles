@@ -1,0 +1,1 @@
+alias nbr="nanobox run"
