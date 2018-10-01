@@ -63,3 +63,6 @@ call VimSource("~/.vimrc.options.general")
 
 " vim-syntastic
   call VimSource('~/.vimrc.options.syntastic')
+
+" vim-devicons
+  call VimSource('~/.vimrc.options.devicons')

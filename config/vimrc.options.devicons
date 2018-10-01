@@ -1,0 +1,6 @@
+set guifont=DejaVu_Sans_Mono:h9
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['ex'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['exs'] = ''
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['eex'] = ''
+

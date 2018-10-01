@@ -1,5 +1,5 @@
 " NerdTree {
-    map <C-e> <plug>NERDTreeTabsToggle<CR>
+    map <C-e> :NERDTreeToggle<CR>
     map <leader>e :NERDTreeFind<CR>
     nmap <leader>nt :NERDTreeFind<CR>
 
@@ -9,7 +9,6 @@
     let NERDTreeQuitOnOpen=1
     let NERDTreeMouseMode=2
     let NERDTreeShowHidden=1
-    let NERDTreeKeepTreeInNewTab=1
-    let g:nerdtree_tabs_open_on_gui_startup=0
+
 " }
 
