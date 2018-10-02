@@ -1,12 +1,23 @@
 # Alex Parker’s Dotfiles
 
+## Tool/app dependencies
+https://github.com/ggreer/the_silver_searcher
+Tmux: `brew install tmux`
+Tig: `brew install tig`
 
-Hard Dependencies:
-Git, Vim 7.4
 
-Soft Dependencies
-Bashmarks
-Selecta
+## Noteworthy files
+[config/tmux.conf](https://github.com/alexparker/dotfiles/blob/master/config/tmux.conf)  
+[config/vimrc.bundles.local](https://github.com/alexparker/dotfiles/blob/master/config/vimrc.bundles.local)  
+[config/tigrc](https://github.com/alexparker/dotfiles/blob/master/config/tigrc)  
+[alex.zsh-theme](https://github.com/alexparker/dotfiles/blob/master/alex.zsh-theme) (prompt) 
+[ctrlp.vim](https://github.com/alexparker/dotfiles/blob/master/config/vimrc.options.ctrlp) 
+
+
+
+### My ever-changing vim color scheme:
+[alexparker/vim-axp-colors/colors/mad_unicorn.vim](https://github.com/alexparker/vim-axp-colors/blob/master/colors/mad_unicorn.vim)
+
 
 ## Setup
 
@@ -19,17 +30,12 @@ git clone https://github.com/alexparker/dotfiles.git
 ### 2) Install Fresh
 
 ```sh
-bash -c “`curl -sLa https://github.com/alexparker/fresh/blob/master/install.sh`”
+sh -c “`curl -sLa https://github.com/alexparker/fresh/blob/master/install.sh`”
 ````
 
 source `~/.fresh/build/shell.sh`
 ```sh
-echo “source ‘~/.fresh/build/shell.sh’” >> ~/.bashrc
-```
-
-### 3) Install spf13-Vim
-```sh
-sh <(curl https://github.com/alexparker/spf13-vim/blob/3.0/bootstrap.sh -L)
+echo “source ‘~/.fresh/build/shell.sh’” >> ~/.zshrc
 ```
 
 I am trying to keep a list of all the shortcuts I use regularly for vim here:

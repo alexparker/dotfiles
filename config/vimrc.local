@@ -116,8 +116,6 @@ nnoremap <leader>m <C-W>_ <C-W>\|
   inoremap HH <Esc>
   inoremap JJ <Esc>o
 
-autocmd BufWritePre * :%s/\s\+$//e
-
 augroup CursorLine
     au!
     au VimEnter * setlocal cursorline

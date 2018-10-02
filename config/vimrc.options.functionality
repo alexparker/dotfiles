@@ -13,7 +13,8 @@ endfunction
 " }
 
 " Remove trailing whitespaces and ^M chars
-autocmd FileType c,cpp,java,go,php,javascript,python,twig,xml,yml autocmd BufWritePre <buffer> if !exists('g:spf13_keep_trailing_whitespace') | call StripTrailingWhitespace() | endif
+autocmd FileType markdown let b:noStripWhitespace=1
+autocmd BufWritePre <buffer> if !exists('b:noStripWhitespace') | call StripTrailingWhitespace() | endif
 
 "autocmd FileType go autocmd BufWritePre <buffer> Fmt
 autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
