@@ -18,6 +18,8 @@
 	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
+	<key>CGFontRenderingFontSmoothingDisabled</key>
+	<false/>
 	<key>CheckTestRelease</key>
 	<false/>
 	<key>ClosingHotkeySwitchesSpaces</key>
@@ -254,6 +256,8 @@
 	<key>DimOnlyText</key>
 	<true/>
 	<key>DisableFullscreenTransparency</key>
+	<true/>
+	<key>EnableProxyIcon</key>
 	<false/>
 	<key>EnableRendezvous</key>
 	<false/>
@@ -302,13 +306,13 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>7</string>
+	<string>6</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dropbox/Apps/iTerm</string>
+	<string>~/Dropbox (Personal)/Apps/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -321,8 +325,8 @@
 	<false/>
 	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
 	<array>
-		<string>0.000000, 0.000000, 228.000000, 299.000000, NO, NO</string>
-		<string>0.000000, 300.000000, 228.000000, 43.000000, NO, NO</string>
+		<string>0.000000, 0.000000, 228.000000, 263.000000, NO, NO</string>
+		<string>0.000000, 264.000000, 228.000000, 43.000000, NO, NO</string>
 	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
@@ -376,23 +380,25 @@
 		</array>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 78 228 280 0 0 1680 1028 </string>
+	<string>2412 670 228 280 0 0 3440 1418 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1180 86 445 495 0 0 1680 1028 </string>
+	<string>587 207 445 257 0 0 1680 1027 </string>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>787 957 735 382 0 0 3440 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 493 620 392 0 0 1680 1050 </string>
+	<string>1410 768 620 392 0 0 3440 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>15 144 796 473 0 0 3440 1418 </string>
+	<string>89 183 796 486 0 0 3440 1417 </string>
 	<key>NSWindow Frame com.apple.typography_panel_DejaVuSansMonoForPowerline</key>
 	<string>296 582 260 36 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1050 0 0 1680 1028 </string>
+	<string>0 0 3440 1440 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3440 -49 1680 1028 3440 -49 1680 1028 </string>
+	<string>1720 0 1720 1417 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2960 -30 1276 1058 1680 -30 2560 1058 </string>
+	<string>1720 0 1720 1417 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>385 61 710 427 0 0 2560 1058 </string>
+	<string>0 0 1720 1417 0 0 3440 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -570,9 +576,9 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>2</real>
+			<real>30</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -637,10 +643,36 @@
 			</dict>
 			<key>Guid</key>
 			<string>21824F82-DE46-42F5-ACEA-92A068BE888A</string>
+			<key>Has Hotkey</key>
+			<false/>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1.0335655120481926</real>
+			<real>1.0067594597138554</real>
+			<key>HotKey Activated By Modifier</key>
+			<false/>
+			<key>HotKey Alternate Shortcuts</key>
+			<array/>
+			<key>HotKey Characters</key>
+			<string></string>
+			<key>HotKey Characters Ignoring Modifiers</key>
+			<string>t</string>
+			<key>HotKey Key Code</key>
+			<integer>17</integer>
+			<key>HotKey Modifier Activation</key>
+			<integer>0</integer>
+			<key>HotKey Modifier Flags</key>
+			<integer>1310720</integer>
+			<key>HotKey Window Animates</key>
+			<true/>
+			<key>HotKey Window AutoHides</key>
+			<true/>
+			<key>HotKey Window Dock Click Action</key>
+			<integer>0</integer>
+			<key>HotKey Window Floats</key>
+			<true/>
+			<key>HotKey Window Reopens On Activation</key>
+			<false/>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -846,11 +878,13 @@
 			<key>Name</key>
 			<string>Default small</string>
 			<key>Non Ascii Font</key>
-			<string>DejaVuSansMonoForPowerline 9</string>
+			<string>DroidSansMonoNerdFontComplete- 9</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
 			<string>DejaVuSansMonoForPowerline 9</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
@@ -995,12 +1029,16 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Thin Strokes</key>
+			<integer>3</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -1047,11 +1085,11 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1.1720067771084339</real>
+			<real>1.1498752823795182</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>12</integer>
 			<key>Working Directory</key>
 			<string>/Users/alexparker</string>
 		</dict>
@@ -3962,8 +4000,14 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C2F55CF6-4875-4803-A5D0-87B976ACC52D</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>529879130.555888</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -4030,7 +4074,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-17T06:49:54Z</date>
+	<date>2018-10-31T15:55:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -4040,7 +4084,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -4053,6 +4097,8 @@
 	<integer>6</integer>
 	<key>TabStyle</key>
 	<integer>1</integer>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>4</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -5703,7 +5749,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
