@@ -9,7 +9,6 @@ nnoremap <silent> + :vert res +5<cr>
 
 let mapleader= ','
 
-set nospell
 set signcolumn=yes
 set foldmethod=indent
 set foldcolumn=0

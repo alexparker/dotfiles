@@ -8,6 +8,7 @@
 alias gc="git commit"
 #alias gp="git pull"
 
+
 alias pr="hub pull-request"
 function label {
   if [[ ! -a ".git" ]]; then

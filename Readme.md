@@ -1,7 +1,7 @@
 # Alex Parker’s Dotfiles
 
 ## Tool/app dependencies
-https://github.com/ggreer/the_silver_searcher
+https://github.com/ggreer/the_silver_searcher  
 Tmux: `brew install tmux`
 Tig: `brew install tig`
 
