@@ -33,27 +33,23 @@ echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
 
 brew cask install alfred
 brew cask install bartender
-brew cask install base
 brew cask install docker
 brew cask install dropbox
 brew cask install droplr
 brew cask install firefox
-brew cask install flux
 brew cask install google-drive
 brew cask install hammerspoon
 brew cask install imageoptim
 brew cask install iterm2
+brew cask install keybase
+brew cask install loopback
 brew cask install polymail
 brew cask install postman
-brew cask install psequel
-brew cask install screenhero
-brew cask install sequel-pro
 brew cask install sketch
 brew cask install slack
-brew cask install soundflowerbed
 brew cask install sublime-text
+brew cask install tableplus
 brew cask install transmission
-brew cask install transmit
 brew cask install viscosity
 brew cask install vlc
 
