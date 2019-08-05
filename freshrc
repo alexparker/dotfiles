@@ -14,3 +14,6 @@ fresh config/\* --file
 fresh plugins/oh-my-zsh/custom/themes/alex.zsh-theme --file=~/.oh-my-zsh/custom/themes/alex.zsh-theme
 # Vim airline theme
 fresh plugins/vim/autoload/airline/themes/alex_airline.vim --file=~/.vim/autoload/airline/themes/alex_airline.vim
+
+# Hammerspoon
+fresh plugins/hammerspoon/init.lua --file=~/.hammerspoon/init.lua
