@@ -1,3 +1,14 @@
+#
+# Table of Contents
+# - Install Brew
+# - Brew install packages
+# - Brew install applications
+# - Install ASDF
+# - Install Vundle
+# - Install Fresh
+#   - SymLink .freshrc file from dotfiles
+# - ,=
+#
 ### Install brew packages ###
 
 brew install zsh zsh-completions
@@ -11,6 +22,8 @@ brew install yarn
 brew install nvm
 brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc
 
+brew tap jesseduffield/lazydocker
+brew install lazydocker
 ### Install things via curl
 
 # Oh my ZSH
@@ -18,6 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Fresh Shell config manager
 bash -c "`curl -sL https://get.freshshell.com`"
+
 
 
 ### Install things via git clone

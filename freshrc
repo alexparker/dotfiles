@@ -1,10 +1,16 @@
 fresh freshshell/fresh bin/fresh --bin
 
+# Add contents of these files to ~/.fresh/build/shell.sh
 fresh shell/\*
 fresh shell/aliases/\*
 fresh shell/config/\*
 
+# Creates a 1:1 file config/myfile -> ~/.myfile
 fresh config/\* --file
 
+# Specific files ----------------------------------------------------------
+
+# Oh my ZSH theme
 fresh plugins/oh-my-zsh/custom/themes/alex.zsh-theme --file=~/.oh-my-zsh/custom/themes/alex.zsh-theme
+# Vim airline theme
 fresh plugins/vim/autoload/airline/themes/alex_airline.vim --file=~/.vim/autoload/airline/themes/alex_airline.vim

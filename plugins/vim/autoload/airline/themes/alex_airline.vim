@@ -33,12 +33,17 @@ let s:cterm_replacefg = 15   " Foreground for replace mode and file position blo
 let s:gui_replacefg   = '#FFFFFF'
 
 let s:cterm_alert     = 88   " Modified file alert color
+let s:cterm_alertbg = 88   " Background for replace mode and file position blocks
 let s:gui_alert       = '#870000'
 
 let s:cterm_inactivebg = 231 " Background for inactive mode
 let s:gui_inactivebg   = '#1C1C1C'
 let s:cterm_inactivefg = 236 " Foreground for inactive mode
 let s:gui_inactivefg   = '#6E6E6E'
+let s:cterm_inactive_modfg = 236
+let s:gui_inactive_modfg = '#6E6E6E'
+let s:cterm_inactive_modbg = 221
+let s:gui_inactive_modbg = '#FEF29E'
 
 " Branch and file format
 let s:BB = [s:gui_termfg, s:gui_termbg, s:cterm_termfg, s:cterm_termbg] " Branch and file format blocks
@@ -75,6 +80,7 @@ let s:IA1 = [s:gui_inactivefg, s:gui_inactivebg, s:cterm_inactivefg, s:cterm_ina
 let s:IA2 = [s:gui_inactivefg, s:gui_inactivebg, s:cterm_inactivefg, s:cterm_inactivebg, '']
 let s:IA3 = [s:gui_inactivefg, s:gui_inactivebg, s:cterm_inactivefg, s:cterm_inactivebg, '']
 let g:airline#themes#alex_airline#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
+let g:airline#themes#alex_airline#palette.inactive_modified = {'airline_c': [s:gui_inactive_modfg, s:gui_inactive_modbg, s:cterm_inactive_modfg, s:cterm_inactive_modbg, 'bold'] ,}
 
 " CtrlP plugin colors
 if !get(g:, 'loaded_ctrlp', 0)
