@@ -1,3 +1,14 @@
+#
+# Table of Contents
+# - Install Brew
+# - Brew install packages
+# - Brew install applications
+# - Install ASDF
+# - Install Vundle
+# - Install Fresh
+#   - SymLink .freshrc file from dotfiles
+# - ,=
+#
 ### Install brew packages ###
 
 brew install zsh zsh-completions
@@ -11,6 +22,8 @@ brew install yarn
 brew install nvm
 brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc
 
+brew tap jesseduffield/lazydocker
+brew install lazydocker
 ### Install things via curl
 
 # Oh my ZSH
@@ -18,6 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Fresh Shell config manager
 bash -c "`curl -sL https://get.freshshell.com`"
+
 
 
 ### Install things via git clone
@@ -33,27 +47,23 @@ echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
 
 brew cask install alfred
 brew cask install bartender
-brew cask install base
 brew cask install docker
 brew cask install dropbox
 brew cask install droplr
 brew cask install firefox
-brew cask install flux
 brew cask install google-drive
 brew cask install hammerspoon
 brew cask install imageoptim
 brew cask install iterm2
+brew cask install keybase
+brew cask install loopback
 brew cask install polymail
 brew cask install postman
-brew cask install psequel
-brew cask install screenhero
-brew cask install sequel-pro
 brew cask install sketch
 brew cask install slack
-brew cask install soundflowerbed
 brew cask install sublime-text
+brew cask install tableplus
 brew cask install transmission
-brew cask install transmit
 brew cask install viscosity
 brew cask install vlc
 

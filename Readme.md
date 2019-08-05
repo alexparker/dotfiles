@@ -7,11 +7,11 @@ Tig: `brew install tig`
 
 
 ## Noteworthy files
-[config/tmux.conf](https://github.com/alexparker/dotfiles/blob/master/config/tmux.conf)  
-[config/vimrc.bundles.local](https://github.com/alexparker/dotfiles/blob/master/config/vimrc.bundles.local)  
-[config/tigrc](https://github.com/alexparker/dotfiles/blob/master/config/tigrc)  
-[alex.zsh-theme](https://github.com/alexparker/dotfiles/blob/master/alex.zsh-theme) (prompt) 
-[ctrlp.vim](https://github.com/alexparker/dotfiles/blob/master/config/vimrc.options.ctrlp) 
+[config/tmux.conf](https://github.com/alexparker/dotfiles/blob/master/config/tmux.conf)
+[config/vimrc.bundles.local](https://github.com/alexparker/dotfiles/blob/master/config/vimrc.bundles.local)
+[config/tigrc](https://github.com/alexparker/dotfiles/blob/master/config/tigrc)
+[alex.zsh-theme](https://github.com/alexparker/dotfiles/blob/master/alex.zsh-theme) (prompt)
+[ctrlp.vim](https://github.com/alexparker/dotfiles/blob/master/config/vimrc.options.ctrlp)
 
 
 
@@ -30,8 +30,10 @@ git clone https://github.com/alexparker/dotfiles.git
 ### 2) Install Fresh
 
 ```sh
-sh -c “`curl -sLa https://github.com/alexparker/fresh/blob/master/install.sh`”
+sh -c “`curl -sLa https://raw.githubusercontent.com/alexparker/fresh/blob/master/install.sh`”
 ````
+
+`ln -s ~/.dotfiles/freshrc ~/.freshrc`
 
 source `~/.fresh/build/shell.sh`
 ```sh

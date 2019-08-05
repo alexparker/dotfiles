@@ -2,14 +2,13 @@ set softtabstop=2
 set shiftwidth=2
 set tabstop=2
 set expandtab
-colorscheme mad_unicorn
+colorscheme abstract
 
 nnoremap <silent> - :vert res -5<cr>
 nnoremap <silent> + :vert res +5<cr>
 
 let mapleader= ','
 
-set nospell
 set signcolumn=yes
 set foldmethod=indent
 set foldcolumn=0
@@ -37,6 +36,11 @@ set foldlevel=99
 
 
     map <Leader>= <C-w>=
+
+
+" JSON Formatting
+nmap <leader>j :%!python -m json.tool<CR>
+vnorem <leader>j :'<,'>!python -m json.tool<CR>
 
 
 inoremap <C-P> <Esc>:CtrlP<CR>
