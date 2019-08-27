@@ -33,7 +33,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 bash -c "`curl -sL https://get.freshshell.com`"
 
 
-
 ### Install things via git clone
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -57,6 +56,7 @@ brew cask install imageoptim
 brew cask install iterm2
 brew cask install keybase
 brew cask install loopback
+brew cask install notion
 brew cask install polymail
 brew cask install postman
 brew cask install sketch
@@ -66,6 +66,9 @@ brew cask install tableplus
 brew cask install transmission
 brew cask install viscosity
 brew cask install vlc
+brew cask install bettertouchtool
+brew cask install rescuetime
+
 
 
 ### macOS specific settings ###
