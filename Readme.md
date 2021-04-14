@@ -30,7 +30,7 @@ git clone https://github.com/alexparker/dotfiles.git
 ### 2) Install Fresh
 
 ```sh
-sh -c “`curl -sLa https://raw.githubusercontent.com/alexparker/fresh/blob/master/install.sh`”
+sh -c "`curl -sLa https://raw.githubusercontent.com/alexparker/fresh/master/install.sh`"
 ````
 
 `ln -s ~/.dotfiles/freshrc ~/.freshrc`
