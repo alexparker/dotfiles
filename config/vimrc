@@ -30,7 +30,6 @@ set t_Co=256
         source ~/.vimrc.options
     endif
 " }
-
-
-
+"
+"
 

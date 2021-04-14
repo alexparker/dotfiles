@@ -1,0 +1,149 @@
+{
+    "workbench.sideBar.location": "left",
+    "workbench.panel.location": "right",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "\"Dank Mono\", \"DejaVu Sans Mono for Powerline\", monospace",
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js", //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "comment"
+                ],
+                "settings": {
+                    "foreground": "#555555",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            /**
+                Elixir Styles
+            */
+            {
+                "scope": [
+                    "source.elixir",
+                    "punctuation.section",
+                    "punctuation.section.function",
+                    "punctuation.separator",
+                    "punctuation.definition.map",
+                    "parameter.variable.function.elixir"
+                ],
+                "settings": {
+                    "foreground": "#dddddd",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.double.elixir",
+                    "punctuation.definition.string.begin.elixir",
+                    "punctuation.definition.string.end.elixir"
+                ],
+                "settings": {
+                    "foreground": "#cac389",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.function.elixir"
+                ],
+                "settings": {
+                    "foreground": "#36ca9e",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.function-call.elixir"
+                ],
+                "settings": {
+                    "foreground": "#a8d3c6",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.operator"
+                ],
+                "settings": {
+                    "foreground": "#FF479F",
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.constant.elixir",
+                    "constant.language.symbol",
+                    "punctuation.definition.constant.elixir"
+                ],
+                "settings": {
+                    "foreground": "#42abb4",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "source.json support",
+                    "support"
+                ],
+                "settings": {
+                    "foreground": "#ccc",
+                    "fontStyle": ""
+                }
+            }
+        ],
+    },
+    "workbench.settings.openDefaultKeybindings": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#444",
+        "statusBar.noFolderBackground": "#00638a",
+        "statusBar.debuggingBackground": "#850000",
+        "editor.lineHighlightBackground": "#333333"
+    },
+    "vim.leader": ",",
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "c",
+                "space"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ],
+            "when": "editorTextFocus && !editorReadonly"
+        }
+    ]
+}
